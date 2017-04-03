@@ -13,6 +13,7 @@
     <meta name="keyword" content="web development company, web designing company, ecommerce website development, website developers in delhi, website designing company in delhi, web design service">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="amphtml" href="https://www.scaledesk.com/web-development-company-delhi/amp-final/index.html">
 
     <!--    Twitter Card -->
 
@@ -144,7 +145,7 @@
                     </div>
 
                     <div class="form-group">
-                        <input type="number"  name="phone" required placeholder="Contact Number" />
+                        <input type="tel" pattern="[789][0-9]{9}" placeholder="Phone Number"  name="phone" required  />
                     </div>
 
                     <div class="form-group">
@@ -1419,13 +1420,13 @@
 
 <!--------------------------------------------------------------------------------------------------------------
                                         Contact us
---------------------------------------------------------------------------------------------------------------->
+-------------------------------------------------------------------------------------------------------------->
 <section id="contact">
     <div class="contact-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <form  class="form-container" method="POST">
+                    <form action="PHPMailer/MailFunction.php" class="form-container" method="POST">
                         <div class="form-group">
                             <input type="text" name="name" required  placeholder="Your Name" />
 
@@ -1436,7 +1437,7 @@
                         </div>
 
                         <div class="form-group">
-                            <input type="number"  name="phone" required placeholder="Contact Number" />
+                            <input type="tel" pattern="[789][0-9]{9}" placeholder="Phone Number "  name="phone" required  />
                         </div>
 
                         <div class="form-group">
@@ -1518,7 +1519,7 @@
 
                     <div class="col-md-6">
 
-                        <form action="PHPMailer/MailFunction.php" class="form-container">
+                        <form action="PHPMailer/MailFunction.php" class="form-container" method="post">
                             <h3>Start Your Project</h3>
                             <div class="f-input-group">
                                 <label class="float-label" for="name" >Name</label>
@@ -1537,8 +1538,8 @@
 
                             <div class="f-input-group">
                                 <label class="float-label"  for="number" >Mobile</label>
-                                <input type="text" id="number" name="phone"  required class="float-input" placeholder="Phone Number">
-                                <span><i class="fa fa-phone"></i></span>
+                                <input type="tel" pattern="[789][0-9]{9}" id="number" name="phone"  required class="float-input" placeholder="Phone Number">
+                                <span><i class="fa fa-phone"></i></span> 
 
 
                             </div>

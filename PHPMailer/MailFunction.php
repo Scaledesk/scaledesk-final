@@ -10,11 +10,12 @@ $name=$_POST['name'];
 // echo $phone;
 // echo $name;
 // die;
-$emailadmin="sanchit2411@gmail.com";
-$emailadmin2="priyanka@scaledesk.com";
-$emailsubadmin="lakhani@scaledesk.com";
-// $emailadmin="nkscoder@gmail.com";
+// $emailadmin="sanchit2411@gmail.com";
+// $emailadmin2="priyanka@scaledesk.com";
+// $emailsubadmin="lakhani@scaledesk.com";
+$emailadmin="nkscoder@gmail.com";
 
+// $namefrom=$_POST['pagefrom'];
 $subject = "Contact Us";
 $Usersubject="Thank You for contacting Scaledesk";
 $messageUsers=file_get_contents('template.html');
@@ -46,16 +47,16 @@ $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, 
 $mail->Port = 587;  
 $mail->IsHTML(true);  */
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+$mail->Host = 'sub5.mail.dreamhost.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'nkscoder@gmail.com';                 // SMTP username
-$mail->Password = 'xxxxxx';                           // SMTP password
-$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465;// TCP port to connect to
+$mail->Username = 'contact@scaledesk.com';                 // SMTP username
+$mail->Password = 'qazplmq1w2e3r4';                           // SMTP password
+//$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 587;// TCP port to connect to
 $mail->IsHTML(true);
-$mail->setFrom('nkscoder@gmail.com', 'Scaledesk Web Studio');
+$mail->setFrom('contact@scaledesk.com', 'Scaledesk');
 //$mail->addAddress('ellen@example.com');               // Name is optional
-$mail->addReplyTo('nkscoder@gmail.com', 'noreply');
+$mail->addReplyTo('contact@scaledesk.com', 'noreply');
 // TCP port to connect to
 /*$mail1->isSMTP();                                      // Set mailer to use SMTP
 $mail1->Host = 'mail.scaledesk.com';  // Specify main and backup SMTP servers
@@ -66,21 +67,22 @@ $mail1->SMTPSecure = 'tls';                            // Enable TLS encryption,
 $mail1->Port = 587;
 $mail1->IsHTML(true);
 */
+
 $mail1->isSMTP();                                      // Set mailer to use SMTP
-$mail1->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+$mail1->Host = 'sub5.mail.dreamhost.com';  // Specify main and backup SMTP servers
 $mail1->SMTPAuth = true;                               // Enable SMTP authentication
-$mail1->Username = 'nkscoder@gmail.com';                 // SMTP username
-$mail1->Password = 'xxxxxx';                           // SMTP password
-$mail1->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail1->Port = 465 ;// TCP port to connect to
+$mail1->Username = 'contact@scaledesk.com';                 // SMTP username
+$mail1->Password = 'qazplmq1w2e3r4';                           // SMTP password
+//$mail1->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+$mail1->Port = 587;// TCP port to connect to
 $mail1->IsHTML(true);
-$mail1->setFrom('nkscoder@gmail.com', 'Scaledesk Web Studio');
+$mail1->setFrom('contact@scaledesk.com', 'Scaledesk');
 //$mail->setFrom('contact@scaledesk.com', 'Scaledesk');
-$mail->addAddress($email, $name);     // Add a recipient
+$mail->addAddress($email, $name);  
 //$mail1->setFrom('contact@scaledesk.com', 'Scaledesk');
 $mail1->addAddress($emailadmin);     // Add a recipient
-$mail1->addAddress($emailadmin2);     // Admin mail
-$mail1->addAddress($emailsubadmin);  // sub admin mail
+// $mail1->addAddress($emailadmin2);     // Admin mail
+// $mail1->addAddress($emailsubadmin);  // sub admin mail
 
 $mail->Subject = $Usersubject;
 $mail->Body    = $messageUsers;
@@ -89,6 +91,8 @@ $mail1->Body    = $message;
     // echo "<pre/>";
     // print_r($mail1);die;
 
+// $mail1->SMTPDebug = 1;
+   // $mail1->SMTPDebug  = 2;
 
   
 
@@ -105,8 +109,10 @@ if($mail1->send())
             }
       
 }else{
-     
-      header("location: ../index.html");
+
+     // echo $mail1->ErrorInfo;
+
+      header("location: /scaledesk-final");
       
 
           
