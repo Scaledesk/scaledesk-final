@@ -10,10 +10,10 @@ $name=$_POST['name'];
 // echo $phone;
 // echo $name;
 // die;
-// $emailadmin="sanchit2411@gmail.com";
-// $emailadmin2="priyanka@scaledesk.com";
-// $emailsubadmin="lakhani@scaledesk.com";
-$emailadmin="nkscoder@gmail.com";
+ $emailadmin="sanchit2411@gmail.com";
+ $emailadmin2="priyanka@scaledesk.com";
+ $emailsubadmin="lakhani@scaledesk.com";
+//$emailadmin="nkscoder@gmail.com";
 
 // $namefrom=$_POST['pagefrom'];
 $subject = "Contact Us";
@@ -81,8 +81,8 @@ $mail1->setFrom('contact@scaledesk.com', 'Scaledesk');
 $mail->addAddress($email, $name);  
 //$mail1->setFrom('contact@scaledesk.com', 'Scaledesk');
 $mail1->addAddress($emailadmin);     // Add a recipient
-// $mail1->addAddress($emailadmin2);     // Admin mail
-// $mail1->addAddress($emailsubadmin);  // sub admin mail
+$mail1->addAddress($emailadmin2);     // Admin mail
+$mail1->addAddress($emailsubadmin);  // sub admin mail
 
 $mail->Subject = $Usersubject;
 $mail->Body    = $messageUsers;
@@ -103,16 +103,16 @@ if($mail1->send())
  {
        
             if($mail->send()){
-                header("location:/scaledesk-final/thankyou.html");
+                header("location: ../thankyou.html");
             }else{
-               header("location:/scaledesk-final/thankyou.html");
+               header("location: ../thankyou.html");
             }
       
 }else{
 
      // echo $mail1->ErrorInfo;
 
-      header("location: /scaledesk-final");
+      header("location: /");
       
 
           
