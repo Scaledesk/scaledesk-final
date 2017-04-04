@@ -23,17 +23,8 @@
 
 
     <script src="js/jquery-3.1.1.min.js"></script>
-    
-    <style>
-        #hero-section{height: 70vh;}
-        .navbar-brand{height: 70px;}
-        #hero-section .main-title span:nth-of-type(1):not(:last-of-type){
-            margin-left: 40px;
-        }
-        #hero-section .main-title span:nth-of-type(2){
-            margin-left: -40px;
-        }
-    </style>
+
+
 
 </head>
 <body>
@@ -50,13 +41,21 @@
                                             Navigation section
     --------------------------------------------------------------------------------------------------------------->
 
-    <nav class="navbar navbar-default custom-navbar navbar-fixed-top">
-        <div class="container-fluid">
+    <nav class="navbar  navbar-fixed-top ">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
 
-                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" width="200"></a>
+                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="scaledesk logo" width="200"></a>
             </div>
+
+            <ul class="nav navbar-nav navbar-left visible-xs">
+                <li><a href="tel:0000000000"  class="pull-right phone"><i class="fa fa-phone"></i> +91 0000000000 </a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+                <li><a href="tel:0000000000" class="phone"><i class="fa fa-phone"></i> +91 0000000000 </a></li>
+            </ul>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
         </div><!-- /.container-fluid -->
@@ -64,7 +63,7 @@
 
 
     <!--------------------------------------------------------------------------------------------------------------
-                                        Navigation section
+                                        Hero section
     --------------------------------------------------------------------------------------------------------------->
     <section id="hero-section">
         <div class="container">
