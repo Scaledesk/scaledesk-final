@@ -1661,3 +1661,103 @@ body{
 }
 
 /*==============Floating labels ends here========*/
+
+
+
+
+/* =====================================================================================================================
+
+
+ Thank you page Starts Here
+
+
+ ===================================================================================================================*/
+
+#thankyou section#hero-section{
+    height: 60vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+}
+
+
+#thankyou .main-title{
+    font-size: 9rem;
+    text-align: center;
+    color: #373a5e;
+    text-transform: uppercase;
+}
+
+
+#thankyou .main-title span:nth-of-type(1):not(:last-of-type){
+    font-weight: 800;
+    display: block;
+    color: #373a5e;
+    margin-left: -7%;
+}
+
+
+#thankyou .main-title span:nth-of-type(1) span{
+    font-weight: 300;
+    color: #fff;
+}
+
+
+
+#thankyou .main-title span:nth-of-type(2){
+    font-weight: 800;
+    color: #373a5e;
+    display: block;
+    margin-left: -5%;
+
+}
+
+
+#thankyou .main-title span:nth-of-type(2) span{
+    font-weight: 800;
+    color: #373a5e;
+}
+
+
+#thankyou .main-title span:nth-of-type(3){
+    font-weight: 800;
+    display: block;
+    margin-left: -13.8%;
+}
+
+
+
+#thankyou .main-title span:nth-of-type(3) span{
+    font-weight: 100;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 600px) {
+    #thankyou .main-title{
+        font-size: 7rem;
+        text-align: left;
+        color: #373a5e;
+        text-transform: uppercase;
+        background-color: rgba(0, 0, 0, 0.04);
+        padding: 30px;
+        margin: 0;
+    }
+
+    #thankyou .main-title span{
+        padding: 0!important;
+        line-height: 75px;
+        margin: 0!important;
+    }
+
+
+
+}
+
+
+
