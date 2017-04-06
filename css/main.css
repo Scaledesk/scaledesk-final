@@ -1425,6 +1425,22 @@ body{
 
 }
 
+.site-footer{
+    background: rgb(252, 252, 252);
+   
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    z-index: 9999;
+    font-size: 18px;
+    border-top: 1px solid rgba(249, 141, 120, 0.39);
+    font-family: sans-serif;
+}
+
+.site-footer a{
+    color: #ff694c;
+}
 
 @media screen and (max-width: 600px) {
     section {
