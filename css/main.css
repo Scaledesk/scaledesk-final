@@ -65,6 +65,10 @@ body{
 
 }
 
+.custom-brand{
+    height: auto;
+}
+
 /*.navbar-default{*/
 /*background-color: transparent;*/
 /*}*/
@@ -1346,7 +1350,7 @@ body{
 
 #footer .footer-bg {
     height: 400px;
-    padding: 40px;
+    /*padding: 40px;*/
     display: -webkit-flex;
     display: -moz-flex;
     -webkit-justify-content: center;
@@ -1427,7 +1431,7 @@ body{
 
 .site-footer{
     background: rgb(252, 252, 252);
-   
+
     bottom: 0;
     position: fixed;
     width: 100%;
@@ -1755,6 +1759,21 @@ body{
 
 #thankyou #thankyou-txt{
     padding-top: 5%;
+}
+
+#thankyou .back-home{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    color: #373a5e;
+    text-decoration: none;
+    /*background-color: #ff694c;*/
+    background: -webkit-linear-gradient(left ,#ff694c 50%, #f2f2f2 50%);
+    font-weight: bolder;
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 600px) {
