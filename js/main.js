@@ -74,7 +74,7 @@ setInterval(function() {
         hasScrolled();
         didScroll = false;
     }
-}, 250);
+}, 10);
 
 function hasScrolled() {
     var st = $(this).scrollTop();

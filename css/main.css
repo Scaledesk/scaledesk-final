@@ -83,21 +83,25 @@ body{
     line-height: 80px;
 }
 
-
+#phone-top{
+    margin-top: 30px;
+}
 
 .custom-nav .navbar-right li a,
 .custom-nav .navbar-left li a,
 .phone{
+    
+    font-family: Opensans, sans-serif;
 
     display: block;
-    width: 170px;
+    width: 180px;
     height: 40px;
     line-height: 40px!important;
     color: #565a5c;
     background-color: #fff;
     text-align: center;
     padding: 0!important;
-    margin-top: 20px;
+/*    margin-top: 20px;*/
     border-radius: 20px;
     border: 1px solid #ff694c;
     box-sizing: border-box;
@@ -106,15 +110,23 @@ body{
 }
 
 @media screen and (max-width: 600px) {
+    
+    #phone-top{
+    margin-top: -60px;
+}
     .custom-nav .navbar-brand img{
         width: 150px;
         margin-top: 10px;
+    }
+    
+    .navbar-brand svg{
+        width: 70%;
     }
 
     .custom-nav .navbar-left li a,
     .phone {
 
-        margin-top: -35px;
+        margin-top: -60px;
         margin-right: 10px;
 
     }
@@ -206,13 +218,52 @@ body{
     color: #fff;
 }
 
+#hero-section .form-container{
+    margin-top: 40px;
+}
+
+
 @media screen and (max-width: 600px) {
+    
+    #hero-section .form-container{
+        margin-top: 20px;
+    }
+    
+    #hero-section .row:nth-child(2){
+        background: rgba(255, 255, 255, 0.85);
+    margin: 25% 0% 5% 0px;
+    outline-offset: -3px;
+    outline: 1px solid #c8c8c8;
+/*    padding: 10px 0px;*/
+        text-align: center;
+
+    }
+    
+    #hero-section .row:nth-child(2) ul {
+        display: flex;
+    list-style-type: none;
+        padding: 0px;
+    }
+    
+    #hero-section .row:nth-child(3) {
+    text-align: -webkit-center;
+    background: rgba(255, 255, 255, 0.69);
+}
+
+#hero-section{
+    background: linear-gradient(rgba(37, 37, 37, 0.5),rgba(16, 16, 16, 0.79)),url(https://static.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+    
     #hero-section .main-title{
-        font-size: 3rem;
-        text-align: left;
+        font-size: 2.5rem;
+/*        text-align: left;*/
         color: #373a5e;
+        text-shadow: 0px 0px 0px rgba(255,255,255,0.60);
         text-transform: uppercase;
-        background-color: rgba(0, 0, 0, 0.04);
+        background-color: rgba(255, 105, 76, 0.32);
         padding: 30px;
         margin-top: 25%;
     }
@@ -234,11 +285,10 @@ body{
 
 
 
-#hero-section .form-container{
-    margin-top: 40px;
-}
+
 
 #hero-section .form-container h4 {
+    font-family: OpenSans,sans-serif;
     text-transform: uppercase;
     font-size: 13px;
     letter-spacing: .3px;
@@ -267,11 +317,11 @@ body{
 }
 
 #hero-section .form-container .form-group:nth-of-type(2) input{
-    width: 80%;
+    width: 90%;
 }
 
 #hero-section .form-container .form-group:nth-of-type(3) input{
-    width: 70%;
+    width: 90%;
 }
 
 #hero-section .form-container .form-group:nth-of-type(4) input{
@@ -299,6 +349,7 @@ body{
 #hero-section .form-container .form-group input:focus{
     outline: none;
 }
+
 
 
 /* =====================================================================================================================
@@ -1444,6 +1495,10 @@ body{
 
 .site-footer a{
     color: #ff694c;
+}
+
+.site-footer a span{
+    color: #373a5e;
 }
 
 @media screen and (max-width: 600px) {
