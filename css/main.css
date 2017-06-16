@@ -251,7 +251,7 @@ body{
 }
 
 #hero-section{
-    background: linear-gradient(rgba(37, 37, 37, 0.5),rgba(16, 16, 16, 0.79)),url(https://static.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg);
+    background: linear-gradient(rgba(37, 37, 37, 0.5),rgba(16, 16, 16, 0.79)),url("../img/bg-home-scaledesk-hero-section.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-size: 100% 100%;
