@@ -150,7 +150,8 @@ body{
    =================================================================================================================== */
 
 #hero-section{
-    background: -webkit-linear-gradient(left ,#f2f2f2 50%,#ff694c 50%);
+    background: linear-gradient( 135deg, #FFF6B7 0%, #F6416C 100%);
+/*    background: -webkit-linear-gradient(left ,#f2f2f2 50%,#ff694c 50%);*/
     height: 100vh;
     display: -webkit-flex;
     display: -moz-flex;
@@ -163,13 +164,29 @@ body{
 }
 
 
+#hero-section .svg{
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+
+}
+
+#hero-section form .row{
+    background: rgba(0,0,0,0.12);
+    padding-top: 15px;
+}
+
+#hero-section .container{
+    margin-top: -200px;
+}
 
 #hero-section .main-title{
-    font-size: 6rem;
+    font-size: 4rem;
     text-align: center;
     color: #373a5e;
     text-transform: uppercase;
-    padding-top: 5%;
+/*    padding-top: 5%;*/
 }
 
 
@@ -215,7 +232,8 @@ body{
 
 #hero-section .main-title span:nth-of-type(3) span{
     font-weight: 300;
-    color: #fff;
+/*    color: #fff;*/
+    color:#373a5e;
 }
 
 #hero-section .form-container{
@@ -225,15 +243,21 @@ body{
 
 @media screen and (max-width: 600px) {
     
+    #hero-section .service-container li {
+        padding: 0px 10px;
+    }
+    
     #hero-section .form-container{
         margin-top: 20px;
     }
     
     #hero-section .row:nth-child(2){
+/*
         background: rgba(255, 255, 255, 0.85);
     margin: 25% 0% 5% 0px;
+*/
     outline-offset: -3px;
-    outline: 1px solid #c8c8c8;
+/*    outline: 1px solid #c8c8c8;*/
 /*    padding: 10px 0px;*/
         text-align: center;
 
@@ -245,32 +269,51 @@ body{
         padding: 0px;
     }
     
+  
+    
     #hero-section .row:nth-child(3) {
     text-align: -webkit-center;
-    background: rgba(255, 255, 255, 0.69);
+/*    background: rgba(255, 255, 255, 0.69);*/
 }
 
 #hero-section{
+/*
     background: linear-gradient(rgba(37, 37, 37, 0.5),rgba(16, 16, 16, 0.79)),url("../img/bg-home-scaledesk-hero-section.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+*/
 }
+    #hero-section .svg{
+        height: auto;
+        width: 50%;
+        bottom: auto;
+    }
     
+    #hero-section .container{
+        margin: auto;
+    }
     #hero-section .main-title{
-        font-size: 2.5rem;
+        font-size: 2rem;
 /*        text-align: left;*/
         color: #373a5e;
         text-shadow: 0px 0px 0px rgba(255,255,255,0.60);
         text-transform: uppercase;
         background-color: rgba(255, 105, 76, 0.32);
-        padding: 30px;
+        padding: 10px;
         margin-top: 25%;
     }
 
     #hero-section .main-title span{
         padding: 0!important;
-        line-height: 40px;
+/*        line-height: 40px;*/
+        line-height: 30px;
+/*        font-size: 2rem !important;*/
+    }
+    
+    #hero-section .main-title span:nth-of-type(4), #hero-section .main-title span:nth-of-type(3){
+        font-size: 1.5rem ;
+        display: inline-block;
     }
 
     #hero-section .main-title span:nth-of-type(3),
@@ -313,15 +356,15 @@ body{
 
 
 #hero-section .form-container .form-group:nth-of-type(1) input{
-    width: 90%;
+    width: 100%;
 }
 
 #hero-section .form-container .form-group:nth-of-type(2) input{
-    width: 90%;
+    width: 100%;
 }
 
 #hero-section .form-container .form-group:nth-of-type(3) input{
-    width: 90%;
+    width: 100%;
 }
 
 #hero-section .form-container .form-group:nth-of-type(4) input{
@@ -1831,7 +1874,39 @@ body{
     margin: 0 auto;
 }
 
+/*SVG path animation*/
+
+/*
+#XMLID_310_ path {
+animation: scal 5s linear infinite;
+}
+
+@keyframes scal{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+.path {
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 10000;
+  animation: dash 3s linear infinite ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 10000 ;
+  }
+  to {
+    stroke-dashoffset: 0 ;
+  }
+}
+*/
+
+
 @media screen and (max-width: 600px) {
+    
+    
     #thankyou .main-title{
         font-size: 7rem;
         text-align: left;
