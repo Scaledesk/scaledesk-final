@@ -22,7 +22,7 @@ body{
     color: #565a5c;
     line-height: 1.6em;
     font-size: 1.4rem;
-    overflow-x: hidden;
+    overflow: hidden;
     -webkit-font-smoothing: antialiased;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -61,7 +61,7 @@ body{
     background-color: #fff;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow: hidden;
 
 }
 
@@ -418,6 +418,15 @@ body{
 }
 
 @media screen  and (min-width: 1900px) and (max-width: 2500px) {
+    
+    #hero-section .svg{
+        height: 43%;
+    width: 50%;
+    }
+    
+    #hero-section .container{
+        margin-top: -300px;
+    }
 
     #services .container{
         padding: 5% 0;
